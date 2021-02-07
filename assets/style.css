@@ -255,10 +255,12 @@ label.logo {
 
 .boxes h2 {
     font-size: 28px;
+    text-align: left;
 }
 
 .boxes p {
     padding-bottom: .25rem;
+    text-align: left;
 }
 
 .container .boxes {
