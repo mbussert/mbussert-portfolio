@@ -6,7 +6,7 @@ My first portfolio website
 ### GitHub: [mbussert](https://github.com/mbussert) | Email: mbussert@gmail.com
 
 ## Links:
-Deployed application: https://mbussert.github.io/mbussert-portfolio/
+Deployed application: https://mbussert.github.io/mbussert-portfolio/  
 GitHub Repository: https://github.com/mbussert/mbussert-portfolio
 
 ## Description:
