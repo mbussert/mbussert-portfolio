@@ -822,7 +822,6 @@ footer h1 {
         text-transform:uppercase;
         text-align: center;
         display: block;
-        vertical-align: middle;
     }
 
     nav li a:hover {
