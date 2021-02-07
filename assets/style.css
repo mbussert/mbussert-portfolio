@@ -790,7 +790,603 @@ footer h1 {
 
 }
 
-@media screen and (max-width: 415px) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (-webkit-min-device-pixel-ratio : 3) {
+
+    nav {
+        height: 50px;
+        width: 100%;
+        box-shadow: none;
+        transition: .3s;
+        position: fixed;
+        top: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        float: none;
+        margin:auto;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 0px;
+        margin-top: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 12px;
+        font-weight:normal;
+        text-transform:uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    nav li a:hover {
+        transition: .2s;
+        border-bottom: solid 1px var(--green-blue-crayola);
+        border-top: solid 1px var(--green-blue-crayola);
+    }
+
+    label.logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: none;
+    }
+
+    .about-me h1 {
+        font-size: 22px;
+    }
+    .about-me p {
+        font-size: 12px;
+        color: white;
+        margin: 0px 20px;
+    }
+
+    .about {
+        height: 50vh;
+        width: 100%;
+        background-image: url(./images/pexels-negative-space-34578.jpg);
+        background-size: cover;
+        background-position: center;
+        display: table;
+        background-attachment: fixed;
+    }
+
+    .about-content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0px;
+        display: table-cell;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2, h3 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .box2 {
+        height: 25vh;
+        width: 100%;
+        background-image: url(./images/pexels-luis-gomes-546819.jpg);
+        background-size: cover;
+        background-position: center;
+        display: block;
+        background-attachment: fixed;
+    }
+
+    .box3 {
+        height: 25vh;
+        width: 100%;
+        background-image: url(./images/pexels-negative-space-92904.jpg);
+        background-size: cover;
+        background-position: center;
+        display: block;
+        background-attachment: fixed;
+    }
+
+    .contact {
+        display: inline-block;
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 20vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact h1 {
+        font-size: 22px;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        border-bottom: solid 2px var(--green-blue-crayola);
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .contact h2 {
+        font-size: 12px;
+        color: white;
+        display: block;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .contact p {
+        font-size: 12px;
+        color: white;
+        margin: 10px 10px;
+        text-align: justify;
+        font-weight: lighter;
+    }
+
+    .contact ul li {
+        display: inline-block;
+        line-height: 1.2em;
+        margin: 10px 5px;
+    }
+
+    .contact ul li a {
+        color: white;
+        font-size: 12px;
+        font-weight:normal;
+        text-transform:uppercase;
+        padding: 0px;
+    }
+
+    .contact li a:hover {
+        transition: .2s;
+        border-bottom: solid 1px var(--green-blue-crayola);
+        border-top: solid 1px var(--green-blue-crayola);
+    }
+
+    .to-top {
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 50px;
+    }
+
+    .uparrow {
+        transform: rotate(-90deg);
+        color: var(--snow);
+        font-size: 50px;
+        transform: rotate(-90deg);
+        display: block;
+        width: 10px;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .uparrow:hover {
+        transition: .2s;
+        color: var(--green-blue-crayola);
+    }
+
+    footer {
+        background-color: var(--green-blue-crayola);
+        color: var(--snow);
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        padding: 10px 0px;
+    }
+
+    footer h1 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .portfolio {
+        display: block;
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 65vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio h1 {
+        font-size: 22px;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        border-bottom: solid 2px var(--green-blue-crayola);
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .portfolio h2 {
+        font-size: 12px;
+        color: white;
+        display: block;
+        text-align: left;
+        margin: 0px 0px;
+    }
+
+    .boxes_text-wrapper h2 {
+        font-size: 12px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .boxes_text-wrapper p {
+        font-size: 10px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-items: center;
+        width: 95vw;
+        margin-top: 20px;
+    }
+
+    .container .boxes {
+        padding: .2rem;
+        background-color: transparent;
+        color: white;
+        display: grid;
+        grid-auto-rows: minmax(300px auto);
+        grid-gap: .2rem;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100vw;
+    }
+
+    .boxes li:nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: span 3;
+        height: 27vh;
+        background-image: url(./images/refactorproj.png);
+        background-size: cover;
+    }
+
+    .boxes li:nth-child(2),
+    .boxes li:nth-child(3),
+    .boxes li:nth-child(4) {
+        grid-column: span 2;
+        grid-row: span 7;
+        height: 20vh;
+    }
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+    nav {
+        height: 50px;
+        width: 100%;
+        box-shadow: none;
+        transition: .3s;
+        position: fixed;
+        top: 0px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        float: none;
+        margin:auto;
+        display: flex;
+        vertical-align: middle;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 0px;
+        margin-top: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 12px;
+        font-weight:normal;
+        text-transform:uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    nav li a:hover {
+        transition: .2s;
+        border-bottom: solid 1px var(--green-blue-crayola);
+        border-top: solid 1px var(--green-blue-crayola);
+    }
+
+    label.logo {
+        display: none;
+    }
+
+    .small-logo {
+        display: none;
+    }
+
+    .about-me h1 {
+        font-size: 22px;
+    }
+    .about-me p {
+        font-size: 12px;
+        color: white;
+        margin: 0px 20px;
+    }
+
+    .about {
+        height: 50vh;
+        width: 100%;
+        background-image: url(./images/pexels-negative-space-34578.jpg);
+        background-size: cover;
+        background-position: center;
+        display: table;
+        background-attachment: fixed;
+    }
+
+    .about-content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0px;
+        display: table-cell;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2, h3 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .box2 {
+        height: 25vh;
+        width: 100%;
+        background-image: url(./images/pexels-luis-gomes-546819.jpg);
+        background-size: cover;
+        background-position: center;
+        display: block;
+        background-attachment: fixed;
+    }
+
+    .box3 {
+        height: 25vh;
+        width: 100%;
+        background-image: url(./images/pexels-negative-space-92904.jpg);
+        background-size: cover;
+        background-position: center;
+        display: block;
+        background-attachment: fixed;
+    }
+
+    .contact {
+        display: inline-block;
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 20vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact h1 {
+        font-size: 22px;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        border-bottom: solid 2px var(--green-blue-crayola);
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .contact h2 {
+        font-size: 12px;
+        color: white;
+        display: block;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .contact p {
+        font-size: 12px;
+        color: white;
+        margin: 10px 10px;
+        text-align: justify;
+        font-weight: lighter;
+    }
+
+    .contact ul li {
+        display: inline-block;
+        line-height: 1.2em;
+        margin: 10px 5px;
+    }
+
+    .contact ul li a {
+        color: white;
+        font-size: 12px;
+        font-weight:normal;
+        text-transform:uppercase;
+        padding: 0px;
+    }
+
+    .contact li a:hover {
+        transition: .2s;
+        border-bottom: solid 1px var(--green-blue-crayola);
+        border-top: solid 1px var(--green-blue-crayola);
+    }
+
+    .to-top {
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 50px;
+    }
+
+    .uparrow {
+        transform: rotate(-90deg);
+        color: var(--snow);
+        font-size: 50px;
+        transform: rotate(-90deg);
+        display: block;
+        width: 10px;
+        text-align: center;
+        margin: auto;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .uparrow:hover {
+        transition: .2s;
+        color: var(--green-blue-crayola);
+    }
+
+    footer {
+        background-color: var(--green-blue-crayola);
+        color: var(--snow);
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        padding: 10px 0px;
+    }
+
+    footer h1 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .portfolio {
+        display: block;
+        background-color: var(--gunmetal);
+        width: 100%;
+        height: 65vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .portfolio h1 {
+        font-size: 22px;
+        color: white;
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        justify-content: center;
+        align-content: center;
+        text-transform: uppercase;
+        border-bottom: solid 2px var(--green-blue-crayola);
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    .portfolio h2 {
+        font-size: 12px;
+        color: white;
+        display: block;
+        text-align: left;
+        margin: 0px 0px;
+    }
+
+    .boxes_text-wrapper h2 {
+        font-size: 12px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .boxes_text-wrapper p {
+        font-size: 10px;
+        padding-left: 5px;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-items: center;
+        width: 95vw;
+        margin-top: 20px;
+    }
+
+    .container .boxes {
+        padding: .2rem;
+        background-color: transparent;
+        color: white;
+        display: grid;
+        grid-auto-rows: minmax(300px auto);
+        grid-gap: .2rem;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100vw;
+    }
+
+    .boxes li:nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: span 3;
+        height: 27vh;
+        background-image: url(./images/refactorproj.png);
+        background-size: cover;
+    }
+
+    .boxes li:nth-child(2),
+    .boxes li:nth-child(3),
+    .boxes li:nth-child(4) {
+        grid-column: span 2;
+        grid-row: span 7;
+        height: 20vh;
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px)
+and (-webkit-min-device-pixel-ratio : 3) {
 
     nav {
         height: 50px;
